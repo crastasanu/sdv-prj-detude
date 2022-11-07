@@ -5,7 +5,7 @@ from typing import List
 from sdv.domain.entities.abstract_actor_entity import AbstractActorEntity
 
 
-class ResourceRepository(metaclass=ABCMeta):
+class ResourcesRepository(metaclass=ABCMeta):
     @abc.abstractmethod
     def find_all(self) -> List[AbstractActorEntity]:
         raise NotImplementedError
